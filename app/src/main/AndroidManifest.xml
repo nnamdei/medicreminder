@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nd.medicreminder">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/medicreminder"
+        android:label="MedicReminder"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AllMedicines"
+            android:label="All Medications"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nd.medicreminder.AllMedicines" />
+        </activity>
+        <activity
+            android:name=".AllMedicinesTime"
+            android:label="Today&apos;s Dosage"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nd.medicreminder.AllMedicinesTime" />
+        </activity>
+        <activity
+            android:name=".NewMedicine"
+            android:label="Add New Medication"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nd.medicreminder.NewMedicine" />
+        </activity>
+        <activity
+            android:name=".MedicineDetail"
+            android:label="Medication Details"
+            android:parentActivityName=".AllMedicines">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nd.medicreminder.MedicineDetail" />
+        </activity>
+        <activity
+            android:name=".DeleteMedicine"
+            android:label="All Medications"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nd.medicreminder.DeleteMedicine" />
+        </activity>
+        <activity
+            android:name=".Alert"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name=".SettingActivity"
+            android:label="Settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nd.medicreminder.MainActivity" />
+        </activity>
+        <activity android:name=".calendarEvents">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nd.medicreminder.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+    </application>
+
+</manifest>

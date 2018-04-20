@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "576385737495",
+    "firebase_url": "https://medreminder01.firebaseio.com",
+    "project_id": "medreminder01",
+    "storage_bucket": "medreminder01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576385737495:android:94315fa2ee749e43",
+        "android_client_info": {
+          "package_name": "com.example.nd.medicreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576385737495-8cogv15p287nseq4394l753lcc8191f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlYWVyAn182gQxGJw18uyIUOpNmN0wn2A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

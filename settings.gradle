@@ -1,0 +1,3 @@
+include ':app'
+include ':libraries:gson-master'
+include ':libraries:CompactCalendarView-master'
